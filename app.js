@@ -11,10 +11,15 @@ app.use(bodyparser.urlencoded({extended: true}));
 //     // res.send("Server is up and running"); 
 //     //we can have two res.send
 // });
+
+/************** this gets the indexpage *****************/
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html")
 
 })
+
+/************** this getts the respnse from the url, formats it then passes it dom *****************/
+
 app.post("/", function(req, res){
 
     const query = req.body.cityName;
@@ -38,9 +43,11 @@ app.post("/", function(req, res){
          }) 
        
     });
-    // res.sendFile(__dirname + "/index.html")
 
 })
+
+/************** this shows that the port is listening *****************/
+
 app.listen(3000, function(){
     console.log("server is running on port 3000");
 })
