@@ -1,0 +1,10 @@
+     //    const imageURL = "https://openweathermap.org/img/wn/" + icon + "@2x.png"
+        //     res.write("<p>The weather is currently " + weatherDesc + "</p>");
+        // // <br/>
+        //     res.write("<h1>The temperature in london is " + temp + "degree Celsius. </h1>");
+        //     res.write("<img src= " + imageURL +  ">")
+        //     res.send()
+        // }) 
+       
+    });
+   
